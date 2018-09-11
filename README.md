@@ -10,6 +10,14 @@
 1. master 正式
 2. develop 開發用
 
+## 本地端測試 build 檔案
+
+1. 執行
+
+```sh
+serve -s build
+```
+
 ## gh-pages (上傳到 github 頁面)
 
 1. 安裝
@@ -90,4 +98,18 @@ npm run deploy
     }
   }(window.location))
 </script>
+```
+
+#### create-react-app with sass not loading styles
+
+```sh
+npm run eject
+npm install sass-loader node-sass --save-dev
+```
+
+1. open config\webpack.config.dev.js
+2. 在這一行新增 /\.scss$/
+
+```javascript
+exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/, /\.scss$/]
 ```
