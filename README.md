@@ -21,7 +21,7 @@ npm install --save gh-pages
 2. 設定
 
 ```json
-- package.json
+#package.json
   "name": "demo",
   "homepage": "https://bnmghjtyu0.github.io/react-login/",
   "scripts": {
