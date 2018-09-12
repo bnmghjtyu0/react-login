@@ -59,8 +59,10 @@ body {
       color: #fff;
       text-decoration: none;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-      &--active {
+      &:last-child {
         border-radius: 0 25px 25px 0;
+      }
+      &--active {
         background-color: $main-color;
       }
     }
