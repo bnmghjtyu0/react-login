@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link, NavLink, Switch } from 'react-router-dom'
 
+import '../assets/css/login.scss'
 class SignInForm extends Component {
   render() {
     return (
@@ -19,7 +21,10 @@ class SignInForm extends Component {
           </div>
 
           <div className="FormField">
-            <button className="FormField__Button mr-20">Sign In</button>
+            <Link to="/home" className="FormField__Button mr-20">
+              Sign In
+            </Link>
+
             <a href="#" className="FormField__Link">
               Creat an account
             </a>
