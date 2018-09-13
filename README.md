@@ -4,6 +4,9 @@
 
 1. scss 模組
 2. login 靜態頁面
+3. ui 模板: [material](https://www.creative-tim.com/product/material-dashboard)
+4. icon: [fontawesome5](https://fontawesome.com/)
+5. router: [react-router-dom](https://reacttraining.com/react-router/)
 
 ## 分支
 
