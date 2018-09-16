@@ -4,59 +4,109 @@ class Sidebar extends Component {
   render() {
     return (
       <div>
-        <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-          <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-              Creative Tim
-            </a>
-          </div>
-          <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="5dd64fbf-4925-ec41-2ff6-68fbe864f1ae">
-            <ul class="nav">
-              <li class="nav-item  ">
-                <a class="nav-link" href="./dashboard.html">
-                  {/* <i class="material-icons">dashboard</i> */}
-                  <p>Dashboard</p>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./user.html">
-                  {/* <i class="material-icons">person</i> */}
-                  <p>User Profile</p>
-                </a>
-              </li>
-              <li class="nav-item active ">
-                <a class="nav-link" href="./tables.html">
-                  {/* <i class="material-icons">content_paste</i> */}
-                  <p>Table List</p>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./typography.html">
-                  <i class="fas fa-list-ul" />
-                  <p>Typography</p>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./icons.html">
-                  {/* <i class="material-icons">bubble_chart</i> */}
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./map.html">
-                  {/* <i class="material-icons">location_ons</i> */}
-                  <p>Maps</p>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./notifications.html">
-                  {/* <i class="material-icons">notifications</i> */}
-                  <p>Notifications</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">UI Elements</span>
+                <i class="menu-arrow" />
+                <i class="mdi mdi-crosshairs-gps menu-icon" />
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/ui-features/buttons.html">
+                      Buttons
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/ui-features/typography.html">
+                      Typography
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/icons/mdi.html">
+                <span class="menu-title">Icons</span>
+                <i class="mdi mdi-contacts menu-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/forms/basic_elements.html">
+                <span class="menu-title">Forms</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/charts/chartjs.html">
+                <span class="menu-title">Charts</span>
+                <i class="mdi mdi-chart-bar menu-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow" />
+                <i class="mdi mdi-medical-bag menu-icon" />
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      {' '}
+                      Blank Page{' '}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/samples/login.html">
+                      {' '}
+                      Login{' '}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/samples/register.html">
+                      {' '}
+                      Register{' '}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      {' '}
+                      404{' '}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    {' '}
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      {' '}
+                      500{' '}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     )
   }
